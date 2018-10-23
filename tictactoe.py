@@ -1,7 +1,5 @@
 class Node:
 
-    score = {"0" : 1, "1" : 10, "2" : 100, "3" : 1000}
-
     def __init__(self, matrix, hValue, symbol, opponentSymbol):
         self.matrix = matrix
         self.hValue = hValue
@@ -89,7 +87,6 @@ class Node:
                 children.append(Node(matrix, -1, self.opponentSymbol, self.symbol))
 
             else:
-                # children.append(Node(matrix, 0, self.opponentSymbol, self.symbol))
                 children.append(Node(matrix, 0, self.symbol, self.opponentSymbol))
 
         return children
