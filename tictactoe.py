@@ -339,7 +339,7 @@ class Program:
                     opponentSymbol = 'O'
                 else:
                     opponentSymbol = 'X'
-                return (symbol, opponentSymbol)
+                return (symbol.upper(), opponentSymbol)
             print("\nInvalid input. Please try again.\n")
 
     def askForMatchReplay(self):
